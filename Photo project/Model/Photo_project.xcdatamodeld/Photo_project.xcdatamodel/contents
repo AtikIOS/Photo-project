@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22758" systemVersion="23G93" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="ALBUM" representedClassName="ALBUM" syncable="YES" codeGenerationType="class">
+        <attribute name="albumName" optional="YES" attributeType="String"/>
+        <attribute name="createdDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="ALBUMIMAGE" representedClassName="ALBUMIMAGE" syncable="YES" codeGenerationType="class">
+        <attribute name="album_image_name" optional="YES" attributeType="String"/>
+    </entity>
+</model>

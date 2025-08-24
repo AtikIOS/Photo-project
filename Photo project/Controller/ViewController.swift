@@ -1,8 +1,10 @@
 //
-//import UIKit
-//import PhotosUI
-//class ViewController: UIViewController {
+//  DisplayVCfirstCell.swift
+//  Photo project
 //
+//  Created by Atik Hasan on 8/16/24.
+//
+
 import UIKit
 import Foundation
 import PhotosUI

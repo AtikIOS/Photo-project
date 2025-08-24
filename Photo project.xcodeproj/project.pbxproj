@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		BE088E7A2E5B7B7D001DA004 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE088E792E5B7B7A001DA004 /* Common.swift */; };
+		BE088E7E2E5B99CB001DA004 /* NewAlbum.png in Resources */ = {isa = PBXBuildFile; fileRef = BE088E7C2E5B99CB001DA004 /* NewAlbum.png */; };
+		BE088E7F2E5B99CB001DA004 /* Preview.png in Resources */ = {isa = PBXBuildFile; fileRef = BE088E7D2E5B99CB001DA004 /* Preview.png */; };
+		BE088E802E5B99CB001DA004 /* Home.png in Resources */ = {isa = PBXBuildFile; fileRef = BE088E7B2E5B99CB001DA004 /* Home.png */; };
 		BE5097702C707184005B83D3 /* GSImageViewerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE50976F2C707184005B83D3 /* GSImageViewerController.swift */; };
 		BE7A0C502C760592009B1D94 /* ImageLowerResulationMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7A0C4F2C760592009B1D94 /* ImageLowerResulationMaker.swift */; };
 		BEAB437F2C7347D70021F0ED /* MyCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAB437E2C7347D70021F0ED /* MyCollectionViewFlowLayout.swift */; };
@@ -32,6 +35,9 @@
 
 /* Begin PBXFileReference section */
 		BE088E792E5B7B7A001DA004 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		BE088E7B2E5B99CB001DA004 /* Home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Home.png; sourceTree = "<group>"; };
+		BE088E7C2E5B99CB001DA004 /* NewAlbum.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NewAlbum.png; sourceTree = "<group>"; };
+		BE088E7D2E5B99CB001DA004 /* Preview.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Preview.png; sourceTree = "<group>"; };
 		BE50976F2C707184005B83D3 /* GSImageViewerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GSImageViewerController.swift; sourceTree = "<group>"; };
 		BE7A0C4F2C760592009B1D94 /* ImageLowerResulationMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLowerResulationMaker.swift; sourceTree = "<group>"; };
 		BEAB437E2C7347D70021F0ED /* MyCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
@@ -156,6 +162,9 @@
 				BE1C24AF2C6D317D008F24AD /* StoryBoard */,
 				BEFEDA202C6CA524008A92E0 /* Assets.xcassets */,
 				BEFEDA252C6CA524008A92E0 /* Info.plist */,
+				BE088E7B2E5B99CB001DA004 /* Home.png */,
+				BE088E7C2E5B99CB001DA004 /* NewAlbum.png */,
+				BE088E7D2E5B99CB001DA004 /* Preview.png */,
 			);
 			path = "Photo project";
 			sourceTree = "<group>";
@@ -219,6 +228,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEFEDA212C6CA524008A92E0 /* Assets.xcassets in Resources */,
+				BE088E7E2E5B99CB001DA004 /* NewAlbum.png in Resources */,
+				BE088E7F2E5B99CB001DA004 /* Preview.png in Resources */,
+				BE088E802E5B99CB001DA004 /* Home.png in Resources */,
 				BEFEDA322C6CA563008A92E0 /* TableViewCell.xib in Resources */,
 				BEF40A322C6FBBF400A9E17F /* DisplayVCfirstCell.xib in Resources */,
 				BEFEDA242C6CA524008A92E0 /* Base in Resources */,

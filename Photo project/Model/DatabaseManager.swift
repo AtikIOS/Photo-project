@@ -3,7 +3,6 @@ import Foundation
 import CoreData
 import UIKit
 
-
 class DatabaseManager {
     
     private var context: NSManagedObjectContext {

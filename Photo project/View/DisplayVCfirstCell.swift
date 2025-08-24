@@ -14,5 +14,10 @@ class DisplayVCfirstCell: UICollectionViewCell {
         super.awakeFromNib()
         
     }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        self.firstImageView.image = nil
+    }
 
 }

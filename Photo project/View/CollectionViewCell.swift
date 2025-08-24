@@ -9,14 +9,14 @@ class CollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
     }
     
-    func configure( image: UIImage) {
-        
-        let originalImage = image
-        let targetSize = CGSize(width: 100, height: 100)
-        if let thumImage = originalImage.resized(to: targetSize) {
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        self.cellForImage.image = nil
+    }
+    
+    func configure(image: UIImage?) {
+        if let thumImage = image {
             cellForImage.image = thumImage
-        } else {
-            cellForImage.image = originalImage
         }
     }
 }

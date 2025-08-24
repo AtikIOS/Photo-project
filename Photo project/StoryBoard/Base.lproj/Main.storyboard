@@ -68,14 +68,13 @@
                                 </collectionViewFlowLayout>
                                 <cells/>
                             </collectionView>
-                            <collectionView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="PW8-gt-s1b">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="PW8-gt-s1b">
                                 <rect key="frame" x="0.0" y="749" width="393" height="69"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="69" id="OLT-kb-s8W"/>
-                                    <constraint firstAttribute="width" constant="393" id="sNm-CV-A0Q"/>
                                 </constraints>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="XtL-yk-Ea6">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="XtL-yk-Ea6">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -87,12 +86,12 @@
                         <viewLayoutGuide key="safeArea" id="eBZ-5m-xkA"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="PW8-gt-s1b" firstAttribute="leading" secondItem="QFt-zh-InK" secondAttribute="leading" id="2z9-39-MhG"/>
                             <constraint firstItem="WGS-vh-Rmg" firstAttribute="leading" secondItem="QFt-zh-InK" secondAttribute="leading" id="7g2-vG-DTy"/>
                             <constraint firstAttribute="trailing" secondItem="WGS-vh-Rmg" secondAttribute="trailing" id="HfF-EO-p2Z"/>
-                            <constraint firstAttribute="trailing" secondItem="PW8-gt-s1b" secondAttribute="trailing" id="OHv-Tw-YwC"/>
+                            <constraint firstItem="eBZ-5m-xkA" firstAttribute="trailing" secondItem="PW8-gt-s1b" secondAttribute="trailing" id="PmT-op-M5T"/>
                             <constraint firstItem="PW8-gt-s1b" firstAttribute="bottom" secondItem="eBZ-5m-xkA" secondAttribute="bottom" id="QjI-5P-deM"/>
                             <constraint firstItem="WGS-vh-Rmg" firstAttribute="top" secondItem="eBZ-5m-xkA" secondAttribute="top" constant="189" id="U6V-ou-O57"/>
+                            <constraint firstItem="PW8-gt-s1b" firstAttribute="leading" secondItem="eBZ-5m-xkA" secondAttribute="leading" id="mpG-Hu-VTy"/>
                         </constraints>
                     </view>
                     <connections>

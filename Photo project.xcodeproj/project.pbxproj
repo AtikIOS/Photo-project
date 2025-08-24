@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE088E7A2E5B7B7D001DA004 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE088E792E5B7B7A001DA004 /* Common.swift */; };
 		BE5097702C707184005B83D3 /* GSImageViewerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE50976F2C707184005B83D3 /* GSImageViewerController.swift */; };
 		BE7A0C502C760592009B1D94 /* ImageLowerResulationMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7A0C4F2C760592009B1D94 /* ImageLowerResulationMaker.swift */; };
 		BEAB437F2C7347D70021F0ED /* MyCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAB437E2C7347D70021F0ED /* MyCollectionViewFlowLayout.swift */; };
@@ -30,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BE088E792E5B7B7A001DA004 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		BE50976F2C707184005B83D3 /* GSImageViewerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GSImageViewerController.swift; sourceTree = "<group>"; };
 		BE7A0C4F2C760592009B1D94 /* ImageLowerResulationMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLowerResulationMaker.swift; sourceTree = "<group>"; };
 		BEAB437E2C7347D70021F0ED /* MyCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 		BEFEDA132C6CA523008A92E0 /* Photo project */ = {
 			isa = PBXGroup;
 			children = (
+				BE088E792E5B7B7A001DA004 /* Common.swift */,
 				BE7A0C4E2C760562009B1D94 /* Extention */,
 				BE1C24AB2C6D3135008F24AD /* Application */,
 				BE1C24AC2C6D3142008F24AD /* Model */,
@@ -238,6 +241,7 @@
 				BEFEDA152C6CA523008A92E0 /* AppDelegate.swift in Sources */,
 				BEAB437F2C7347D70021F0ED /* MyCollectionViewFlowLayout.swift in Sources */,
 				BEF40A2F2C6FBB7100A9E17F /* DisplayViewController.swift in Sources */,
+				BE088E7A2E5B7B7D001DA004 /* Common.swift in Sources */,
 				BE7A0C502C760592009B1D94 /* ImageLowerResulationMaker.swift in Sources */,
 				BE5097702C707184005B83D3 /* GSImageViewerController.swift in Sources */,
 				BEFEDA312C6CA563008A92E0 /* TableViewCell.swift in Sources */,

@@ -3,10 +3,15 @@ import Foundation
 import CoreData
 import UIKit
 
+
 class DatabaseManager {
+    
     private var context: NSManagedObjectContext {
         return (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     }
+    
+    static var shared: DatabaseManager = DatabaseManager()
+    
     func saveAlbum(albmName: String) -> ALBUM? {
         let albm = ALBUM(context: context)
         albm.albumName = albmName
@@ -28,9 +33,41 @@ class DatabaseManager {
         }
     }
     
-    func deleteAlbum(album: ALBUM) {
-        context.delete(album)
-        saveContext()
+    // DatabaseManager.swift
+    func deleteAlbum(byName albumName: String) {
+        let request: NSFetchRequest<ALBUM> = ALBUM.fetchRequest()
+        request.predicate = NSPredicate(format: "albumName == %@", albumName)
+        
+        do {
+            let albums = try context.fetch(request)
+            for album in albums {
+                // 1️⃣ Documents directory theke album er sob images delete
+                let albumDirectory = getDocumentsDirectory().appendingPathComponent(albumName)
+                if FileManager.default.fileExists(atPath: albumDirectory.path) {
+                    do {
+                        let fileURLs = try FileManager.default.contentsOfDirectory(at: albumDirectory, includingPropertiesForKeys: nil)
+                        for fileURL in fileURLs {
+                            try FileManager.default.removeItem(at: fileURL)
+                        }
+                        // Optional: album folder o delete korte paro
+                        try FileManager.default.removeItem(at: albumDirectory)
+                    } catch {
+                        print("Failed to delete album images: \(error)")
+                    }
+                }
+                
+                // 2️⃣ Core Data theke album delete
+                context.delete(album)
+            }
+            saveContext()
+        } catch {
+            print("Failed to delete album: \(error)")
+        }
+    }
+
+    // Documents directory path helper
+    func getDocumentsDirectory() -> URL {
+        return FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
     }
     
     func saveContext() {
@@ -41,10 +78,6 @@ class DatabaseManager {
         }
     }
 
-    // MARK :  documents directory URL
-    private func getDocumentsDirectory() -> URL {
-        return FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
-    }
     
     func saveImage(_ image: UIImage, albumName: String) -> Bool {
         let albumDirectory = getDocumentsDirectory().appendingPathComponent(albumName)
@@ -76,7 +109,6 @@ class DatabaseManager {
     func loadImages(from albumName: String) -> [UIImage] {
         var imagesArray: [UIImage] = []
         let albumDirectory = getDocumentsDirectory().appendingPathComponent(albumName)
-
         do {
             let fileURLs = try FileManager.default.contentsOfDirectory(at: albumDirectory, includingPropertiesForKeys: nil)
             for fileURL in fileURLs {
